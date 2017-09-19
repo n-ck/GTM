@@ -1,10 +1,10 @@
 <script>
-if (!sessionStorage.getItem('socialFulcrum')){
-      sessionStorage.setItem('socialFulcrum', new Date());
+if (!sessionStorage.getItem('pixelTimer')){
+      sessionStorage.setItem('pixelTimer', new Date());
     }
 
 function checkId(){
-  var data = sessionStorage.getItem('socialFulcrum');
+  var data = sessionStorage.getItem('pixelTimer');
   var x = Date.parse(data)
   currentDate = new Date();
   if ((currentDate.getTime() - x) / 60000 >= 1 ) {
